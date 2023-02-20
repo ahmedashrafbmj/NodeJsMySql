@@ -172,7 +172,7 @@ app.put('/posts/:id',verifyToken, (req, res) => {
       } else if (result.affectedRows === 0) {
         res.status(404).send("Post not found");
       } else {
-        res.send("Post delete successfully");
+        res.send("Post deleted successfully");
       }
     });
   });
